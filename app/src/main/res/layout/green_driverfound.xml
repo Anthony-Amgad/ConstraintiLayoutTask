@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/greenbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Cancel Ride"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/callbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/greenbtn"
+        android:src="@drawable/ic_phone_call"
+        android:padding="10dp"
+        app:layout_constraintRight_toRightOf="@+id/cancelbtn"
+        app:layout_constraintBottom_toTopOf="@+id/cancelbtn"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/msgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/greenbtn"
+        android:src="@drawable/ic_chat_bubble"
+        android:padding="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/callbtn"
+        app:layout_constraintBottom_toTopOf="@+id/cancelbtn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/platenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(jdg-4565998)"
+        android:textSize="21sp"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="@id/cancelbtn"
+        app:layout_constraintBottom_toTopOf="@id/cancelbtn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/modelnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toyota Yaris"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/cancelbtn"
+        app:layout_constraintBottom_toTopOf="@id/platenum"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:id="@+id/box"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@drawable/lightgreenbtn"
+        app:layout_constraintRight_toRightOf="@id/cancelbtn"
+        app:layout_constraintLeft_toLeftOf="@id/cancelbtn"
+        app:layout_constraintBottom_toTopOf="@id/callbtn"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/personno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_car_seat"
+        android:text="4 Person"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/box"
+        app:layout_constraintTop_toTopOf="@id/box"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintRight_toLeftOf="@id/pet"/>
+
+    <TextView
+        android:id="@+id/pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_dog"
+        android:text="Pet Friendly"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/personno"
+        app:layout_constraintTop_toTopOf="@id/box"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintRight_toLeftOf="@id/sound"/>
+
+    <TextView
+        android:id="@+id/sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_mute"
+        android:text="Sound"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/pet"
+        app:layout_constraintTop_toTopOf="@id/box"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintRight_toRightOf="@id/box"/>
+
+    <ImageView
+       android:id="@+id/driverimg"
+        android:src="@drawable/driver"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintLeft_toLeftOf="@id/box"
+        app:layout_constraintBottom_toTopOf="@id/box"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/drivername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#37b66f"
+        app:layout_constraintLeft_toRightOf="@id/driverimg"
+        app:layout_constraintTop_toTopOf="@id/driverimg"
+        app:layout_constraintBottom_toBottomOf="@id/driverimg"
+        android:layout_marginLeft="20dp"/>
+    
+    <TextView
+        android:id="@+id/ridescomp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_check"
+        android:text="Rides Completed: 250+"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/drivername"
+        app:layout_constraintTop_toBottomOf="@id/drivername"/>
+
+    <TextView
+    android:id="@+id/rating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="(4.8)"
+    android:textSize="21sp"
+    android:textStyle="bold"
+    android:textColor="#37b66f"
+    app:layout_constraintRight_toRightOf="@id/box"
+    app:layout_constraintTop_toTopOf="@id/driverimg"
+    app:layout_constraintBottom_toBottomOf="@id/driverimg" />
+
+    <TextView
+        android:id="@+id/ratingtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="@id/rating"
+        app:layout_constraintLeft_toLeftOf="@id/rating"
+        app:layout_constraintBottom_toTopOf="@id/rating" />
+
+    <TextView
+       android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/greencover"
+        app:layout_constraintBottom_toTopOf="@id/driverimg"
+        android:layout_marginBottom="20dp"
+        android:text="Nearest driver found, will reach in 01:00 min"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

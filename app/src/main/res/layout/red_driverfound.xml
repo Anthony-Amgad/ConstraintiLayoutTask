@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="160dp"
+        android:background="#31B1ACAC">
+
+        <ImageView
+            android:id="@+id/driverimg"
+            android:src="@drawable/driver"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redbtn"
+            android:text="Jubergo"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:padding="7dp"
+            app:layout_constraintTop_toBottomOf="@id/driverimg"
+            app:layout_constraintBottom_toBottomOf="@id/driverimg"
+            app:layout_constraintRight_toRightOf="@id/driverimg"
+            app:layout_constraintLeft_toLeftOf="@id/driverimg"/>
+
+        <ImageView
+            android:id="@+id/callbutn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone_call_black"
+            android:background="@drawable/redbtn"
+            android:backgroundTint="#BCB1B1"
+            android:padding="8dp"
+            app:layout_constraintRight_toLeftOf="@id/driverimg"
+            app:layout_constraintTop_toTopOf="@id/driverimg"
+            app:layout_constraintBottom_toBottomOf="@id/driverimg"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/msgbutn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_bubble_black"
+            android:background="@drawable/redbtn"
+            android:backgroundTint="#BCB1B1"
+            android:padding="8dp"
+            app:layout_constraintLeft_toRightOf="@id/driverimg"
+            app:layout_constraintTop_toTopOf="@id/driverimg"
+            app:layout_constraintBottom_toBottomOf="@id/driverimg"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/foundtag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We found you a driver"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/pickuptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver will pick you up in 02:35"
+            android:textColor="#FF2255"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/foundtag"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/drivernme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintLeft_toLeftOf="@id/logo"
+            app:layout_constraintRight_toRightOf="@id/logo"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/ratingstar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rating"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintLeft_toLeftOf="@id/logo"
+            app:layout_constraintRight_toRightOf="@id/logo"/>
+
+        <TextView
+            android:id="@+id/plateno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="st3751"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/modelno"/>
+
+        <TextView
+            android:id="@+id/modelno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - Toyota Vios"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/plateno"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
